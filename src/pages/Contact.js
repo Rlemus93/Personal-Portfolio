@@ -37,7 +37,6 @@ const Contact = ({ theme, setTheme }) => {
               </svg>
             </label>
           </div>
-          <h1 className="text-3xl lg:text-4xl font-bold mb-8">Contact</h1>
           <div className="flex justify-center items-center w-full">
             <form
               method="POST"

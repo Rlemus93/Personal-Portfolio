@@ -6,7 +6,7 @@ import resume from "../assets/resume.png"
 import resume2 from "../assets/resume2.png"
 import { Link } from "react-router-dom"
 
-const Navbar = ({ theme, setTheme }) => {
+const Navbar = ({ theme }) => {
   return (
     <div className="h-16">
       <div className="navbar bg-base-100 h-full">
@@ -20,7 +20,7 @@ const Navbar = ({ theme, setTheme }) => {
           </Link>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1 text-lg">
+          <ul className="menu menu-horizontal px-1 text-lg font-serif">
             <li>
               <Link to="/projects" className="text-sm sm:text-base md:text-lg">
                 Projects

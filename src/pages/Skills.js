@@ -54,7 +54,7 @@ const Skills = ({ theme, setTheme }) => {
             </label>
           </div>
           <h1 className="text-4xl lg:text-5xl underline underline-offset-8 font-bold mb-8">
-            My Skills
+            Skills
           </h1>
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="text-center border border-gray-300 p-4">

@@ -40,7 +40,7 @@ const About = ({ theme, setTheme }) => {
               </svg>
             </label>
           </div>
-          <div className="card bg-base-100 shadow-xl max-w-lg lg:max-w-3xl w-full lg:mr-8 mb-8 lg:mb-0">
+          <div className="card flex justify-center bg-base-100 shadow-xl max-w-lg lg:max-w-3xl w-full lg:mr-8 mb-8 lg:mb-0">
             <div className="card-body">
               <h2 className="card-title text-3xl lg:text-4xl font-bold">
                 My Story

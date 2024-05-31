@@ -24,7 +24,10 @@ const App = () => {
             path="/"
             element={<Hero theme={theme} setTheme={setTheme} />}
           />
-          <Route path="/projects" element={<Projects />} />
+          <Route
+            path="/projects"
+            element={<Projects theme={theme} setTheme={setTheme} />}
+          />
           <Route
             path="/about"
             element={<About theme={theme} setTheme={setTheme} />}

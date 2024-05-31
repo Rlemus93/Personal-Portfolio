@@ -1,6 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faHouse } from "@fortawesome/free-solid-svg-icons"
 
 const Footer = () => {
   return (
@@ -31,6 +32,13 @@ const Footer = () => {
                     rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon className="size-10" icon={faGithub} />
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div className="tooltip" data-tip="Home">
+                  <a href="/">
+                    <FontAwesomeIcon className="size-10" icon={faHouse} />
                   </a>
                 </div>
               </li>
