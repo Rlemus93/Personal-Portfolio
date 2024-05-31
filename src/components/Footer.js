@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="h-16">
       <footer className="footer items-center p-4 bg-neutral text-neutral-content h-full">
         <aside className="flex items-center space-x-4 w-full justify-between">
-          <p className="hidden md:block text-sm md:text-base">
+          <p className="hidden md:block text-sm md:text-base mb-3">
             Copyright © 2024 - All right reserved
           </p>
           <nav className="flex space-x-4 md:place-self-center md:justify-self-end">

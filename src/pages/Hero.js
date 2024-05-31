@@ -13,7 +13,7 @@ const Hero = ({ theme, setTheme }) => {
     <div className="flex-1">
       <div className="hero h-full bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
-          <div className="absolute top--4 left-4">
+          <div className="absolute top-20 left-4">
             <label className="swap swap-rotate">
               {/* this hidden checkbox controls the state */}
               <input

@@ -18,16 +18,25 @@ const App = () => {
   return (
     <div className="flex flex-col h-screen">
       <Router>
-        <Navbar />
+        <Navbar theme={theme} setTheme={setTheme} />
         <Routes>
           <Route
             path="/"
             element={<Hero theme={theme} setTheme={setTheme} />}
           />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/about"
+            element={<About theme={theme} setTheme={setTheme} />}
+          />
+          <Route
+            path="/skills"
+            element={<Skills theme={theme} setTheme={setTheme} />}
+          />
+          <Route
+            path="/contact"
+            element={<Contact theme={theme} setTheme={setTheme} />}
+          />
         </Routes>
         <Footer />
       </Router>

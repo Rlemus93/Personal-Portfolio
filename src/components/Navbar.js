@@ -2,10 +2,11 @@ import React from "react"
 import logo from "../assets/logo.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faFile } from "@fortawesome/free-solid-svg-icons"
+import resume from "../assets/resume.png"
+import resume2 from "../assets/resume2.png"
 import { Link } from "react-router-dom"
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme }) => {
   return (
     <div className="h-16">
       <div className="navbar bg-base-100 h-full">
@@ -13,7 +14,7 @@ const Navbar = () => {
           <Link to="/">
             <img
               src={logo}
-              className="h-8 sm:h-10 md:h-12 lg:h-16"
+              className="hidden sm:block h-8 sm:h-10 md:h-12 lg:h-16"
               alt="logo"
             />
           </Link>
@@ -27,7 +28,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/about" className="text-sm sm:text-base md:text-lg">
-                About Me
+                About
               </Link>
             </li>
             <li>
@@ -78,7 +79,11 @@ const Navbar = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FontAwesomeIcon className="size-10" icon={faFile} />
+                        <img
+                          src={theme === "black" ? resume2 : resume}
+                          alt="Resume"
+                          className="size-10"
+                        />
                       </a>
                     </div>
                   </li>
