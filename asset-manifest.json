@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/deploy-portfolio/static/css/main.113da32a.css",
+    "main.js": "/deploy-portfolio/static/js/main.c2a55591.js",
+    "static/js/453.1407b060.chunk.js": "/deploy-portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/project3.png": "/deploy-portfolio/static/media/project3.b64f181cb5ab4a1a339a.png",
+    "static/media/project1.png": "/deploy-portfolio/static/media/project1.3d0630c9725efbc812e1.png",
+    "static/media/profile3.png": "/deploy-portfolio/static/media/profile3.4f8ea9623b5fc8411ea5.png",
+    "static/media/profile.png": "/deploy-portfolio/static/media/profile.d3134d310005e6964b14.png",
+    "static/media/project2.png": "/deploy-portfolio/static/media/project2.077af18f0a63336321d7.png",
+    "static/media/project4.png": "/deploy-portfolio/static/media/project4.294460a68d8d86f73f48.png",
+    "static/media/project6.png": "/deploy-portfolio/static/media/project6.91d6ebf38b19fee4fb60.png",
+    "static/media/project5.png": "/deploy-portfolio/static/media/project5.67fcd24cdf65cfd84f2c.png",
+    "static/media/ruby.png": "/deploy-portfolio/static/media/ruby.881adacec5961a34b0cc.png",
+    "static/media/postgre.png": "/deploy-portfolio/static/media/postgre.a7fa39912c91e079e90b.png",
+    "static/media/react.png": "/deploy-portfolio/static/media/react.ac9979693620f0a96231.png",
+    "static/media/git.png": "/deploy-portfolio/static/media/git.bad2b1118eff814bb319.png",
+    "static/media/resume2.png": "/deploy-portfolio/static/media/resume2.02247e24fe669dfc0397.png",
+    "static/media/resume.png": "/deploy-portfolio/static/media/resume.b00e9ef74a2efc798c33.png",
+    "static/media/logo.png": "/deploy-portfolio/static/media/logo.d2e1ac051d0e3763e587.png",
+    "static/media/github2.png": "/deploy-portfolio/static/media/github2.5c08aa29dab2c3c5a7ca.png",
+    "static/media/github.png": "/deploy-portfolio/static/media/github.f11021803f68852df283.png",
+    "static/media/html2.png": "/deploy-portfolio/static/media/html2.34f16ab43ee08cec3b61.png",
+    "static/media/html.png": "/deploy-portfolio/static/media/html.cfb2ba4a6b1c3de295bc.png",
+    "static/media/go.png": "/deploy-portfolio/static/media/go.3e1ba7bd317d5e5f4e31.png",
+    "static/media/css2.png": "/deploy-portfolio/static/media/css2.ae09dbe44ecec3c6da12.png",
+    "static/media/css.png": "/deploy-portfolio/static/media/css.4a6549b8c2b4cda8bb88.png",
+    "static/media/rails.png": "/deploy-portfolio/static/media/rails.ac98173f7ba849070715.png",
+    "static/media/js.png": "/deploy-portfolio/static/media/js.3dfb665e058d08c99f28.png",
+    "index.html": "/deploy-portfolio/index.html",
+    "main.113da32a.css.map": "/deploy-portfolio/static/css/main.113da32a.css.map",
+    "main.c2a55591.js.map": "/deploy-portfolio/static/js/main.c2a55591.js.map",
+    "453.1407b060.chunk.js.map": "/deploy-portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.113da32a.css",
+    "static/js/main.c2a55591.js"
+  ]
+}
