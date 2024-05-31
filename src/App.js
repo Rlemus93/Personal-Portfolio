@@ -21,6 +21,10 @@ const App = () => {
         <Navbar theme={theme} setTheme={setTheme} />
         <Routes>
           <Route
+            path="/Personal-Portfolio"
+            element={<Hero theme={theme} setTheme={setTheme} />}
+          />
+          <Route
             path="/"
             element={<Hero theme={theme} setTheme={setTheme} />}
           />
