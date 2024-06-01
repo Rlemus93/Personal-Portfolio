@@ -7,6 +7,7 @@ import Projects from "./pages/Projects" // Add imports for your other pages
 import About from "./pages/About"
 import Skills from "./pages/Skills"
 import Contact from "./pages/Contact"
+import NotFound from "./pages/NotFound"
 
 const App = () => {
   const [theme, setTheme] = useState("black")
@@ -20,6 +21,10 @@ const App = () => {
       <Router>
         <Navbar theme={theme} setTheme={setTheme} />
         <Routes>
+          <Route
+            path="*"
+            element={<NotFound theme={theme} setTheme={setTheme} />}
+          />
           <Route
             path="/Personal-Portfolio"
             element={<Hero theme={theme} setTheme={setTheme} />}
