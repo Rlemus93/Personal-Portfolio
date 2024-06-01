@@ -37,9 +37,9 @@ const Footer = () => {
               </li>
               <li>
                 <div className="tooltip" data-tip="Home">
-                  <a href="/">
+                  <Link to="/">
                     <FontAwesomeIcon className="size-10" icon={faHouse} />
-                  </a>
+                  </Link>
                 </div>
               </li>
             </ul>
