@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faHouse } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom"
+import resume2 from "../assets/resume2.png"
 
 const Footer = () => {
   return (
@@ -33,6 +34,18 @@ const Footer = () => {
                     rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon className="size-10" icon={faGithub} />
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div className="tooltip" data-tip="Resume">
+                  <a
+                    href="/resume.pdf"
+                    target="_blank"
+                    download
+                    rel="noopener noreferrer"
+                  >
+                    <img src={resume2} alt="Resume" className="size-10" />
                   </a>
                 </div>
               </li>

@@ -14,7 +14,7 @@ const Navbar = ({ theme }) => {
           <Link to="/">
             <img
               src={logo}
-              className="hidden sm:block h-8 sm:h-10 md:h-12 lg:h-16"
+              className="h-8 sm:h-10 md:h-12 lg:h-16"
               alt="logo"
             />
           </Link>
@@ -41,7 +41,7 @@ const Navbar = ({ theme }) => {
                 Contact
               </Link>
             </li>
-            <li>
+            <li className="hidden sm:block">
               <details>
                 <summary className="text-sm sm:text-base md:text-lg">
                   Socials
@@ -77,6 +77,7 @@ const Navbar = ({ theme }) => {
                       <a
                         href="/resume.pdf"
                         target="_blank"
+                        download
                         rel="noopener noreferrer"
                       >
                         <img

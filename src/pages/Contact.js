@@ -1,5 +1,7 @@
 import React from "react"
 import ThemeToggle from "../components/ThemeToggle"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 
 const Contact = ({ theme, setTheme }) => {
   return (
@@ -40,8 +42,8 @@ const Contact = ({ theme, setTheme }) => {
                 rows="10"
                 placeholder="Message"
               ></textarea>
-              <button className="btn btn-accent text-white rounded px-4 py-3 mx-auto flex items-center">
-                Let's Collaborate
+              <button className="btn btn-accent mt-4">
+                Let's Collaborate <FontAwesomeIcon icon={faArrowRight} />
               </button>
             </form>
           </div>
