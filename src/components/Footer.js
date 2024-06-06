@@ -3,9 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faHouse } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom"
-import resume2 from "../assets/resume2.png"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 
 const Footer = () => {
+  const handleEmailClick = () => {
+    window.location.href = "mailto:rlemus93@gmail.com"
+  }
   return (
     <div className="h-16">
       <footer className="footer items-center p-4 bg-neutral text-neutral-content h-full">
@@ -38,15 +41,12 @@ const Footer = () => {
                 </div>
               </li>
               <li>
-                <div className="tooltip" data-tip="Resume">
-                  <a
-                    href={`${process.env.PUBLIC_URL}/resume.pdf`}
-                    target="_blank"
-                    download
-                    rel="noopener noreferrer"
-                  >
-                    <img src={resume2} alt="Resume" className="size-10" />
-                  </a>
+                <div className="tooltip" data-tip="Email">
+                  <FontAwesomeIcon
+                    className="size-10 cursor-pointer"
+                    icon={faEnvelope}
+                    onClick={handleEmailClick}
+                  />
                 </div>
               </li>
               <li>

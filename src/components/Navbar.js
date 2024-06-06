@@ -2,11 +2,14 @@ import React from "react"
 import logo from "../assets/logo.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
-import resume from "../assets/resume.png"
-import resume2 from "../assets/resume2.png"
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import { Link } from "react-router-dom"
 
-const Navbar = ({ theme }) => {
+const Navbar = () => {
+  const handleEmailClick = () => {
+    window.location.href = "mailto:rlemus93@gmail.com"
+  }
+
   return (
     <div className="h-16">
       <div className="navbar bg-base-100 h-full">
@@ -73,19 +76,12 @@ const Navbar = ({ theme }) => {
                     </div>
                   </li>
                   <li>
-                    <div className="tooltip" data-tip="Resume">
-                      <a
-                        href={`${process.env.PUBLIC_URL}/resume.pdf`}
-                        target="_blank"
-                        download
-                        rel="noopener noreferrer"
-                      >
-                        <img
-                          src={theme === "black" ? resume2 : resume}
-                          alt="Resume"
-                          className="size-10"
-                        />
-                      </a>
+                    <div className="tooltip" data-tip="Email">
+                      <FontAwesomeIcon
+                        className="size-10 cursor-pointer"
+                        icon={faEnvelope}
+                        onClick={handleEmailClick}
+                      />
                     </div>
                   </li>
                 </ul>
