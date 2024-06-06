@@ -10,6 +10,7 @@ import projectImage4 from "../assets/project4.png"
 import projectImage5 from "../assets/project5.png"
 import projectImage6 from "../assets/project6.png"
 import ThemeToggle from "../components/ThemeToggle"
+import { motion } from "framer-motion"
 
 const Projects = ({ theme, setTheme }) => {
   const projects = [
@@ -96,30 +97,37 @@ const Projects = ({ theme, setTheme }) => {
   return (
     <div className="flex-1">
       <div className="hero h-full bg-base-200">
-        <div className="hero-content flex-col items-center">
-          <ThemeToggle theme={theme} setTheme={setTheme} />
-          <h1 className="text-3xl lg:text-5xl underline underline-offset-8 font-bold mb-8">
-            My Projects
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
-            {projects.map((project, index) => (
-              <ProjectCard
-                key={index}
-                image={project.image}
-                title={project.title}
-                description={project.description}
-                badges={project.badges}
-                demoLink={project.demoLink}
-                codeLink={project.codeLink}
-              />
-            ))}
+        <ThemeToggle theme={theme} setTheme={setTheme} />
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="hero-content flex-col items-center">
+            <h1 className="text-3xl lg:text-5xl underline underline-offset-8 font-bold mb-8">
+              My Projects
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+              {projects.map((project, index) => (
+                <ProjectCard
+                  key={index}
+                  image={project.image}
+                  title={project.title}
+                  description={project.description}
+                  badges={project.badges}
+                  demoLink={project.demoLink}
+                  codeLink={project.codeLink}
+                />
+              ))}
+            </div>
+            <Link to="/about">
+              <button className="btn btn-accent">
+                About <FontAwesomeIcon icon={faArrowRight} />
+              </button>
+            </Link>
           </div>
-          <Link to="/about">
-            <button className="btn btn-accent">
-              About <FontAwesomeIcon icon={faArrowRight} />
-            </button>
-          </Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

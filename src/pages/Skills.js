@@ -17,6 +17,7 @@ import git from "../assets/git.png"
 import go from "../assets/go.png"
 import github from "../assets/github.png"
 import github2 from "../assets/github2.png"
+import { motion } from "framer-motion"
 
 const Skills = ({ theme, setTheme }) => {
   const frontEndSkills = [
@@ -41,22 +42,32 @@ const Skills = ({ theme, setTheme }) => {
   return (
     <div className="flex-1">
       <div className="hero h-full bg-base-200">
-        <div className="hero-content flex-col items-center">
-          <ThemeToggle theme={theme} setTheme={setTheme} />
-          <h1 className="text-4xl lg:text-5xl underline underline-offset-8 font-bold mb-8">
-            Skills
-          </h1>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <SkillCategory title="Front-End" skills={frontEndSkills} />
-            <SkillCategory title="Back-End" skills={backEndSkills} />
-            <SkillCategory title="Development Tools" skills={devToolsSkills} />
+        <ThemeToggle theme={theme} setTheme={setTheme} />
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 50 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="hero-content flex-col items-center">
+            <h1 className="text-4xl lg:text-5xl underline underline-offset-8 font-bold mb-8">
+              Skills
+            </h1>
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <SkillCategory title="Front-End" skills={frontEndSkills} />
+              <SkillCategory title="Back-End" skills={backEndSkills} />
+              <SkillCategory
+                title="Development Tools"
+                skills={devToolsSkills}
+              />
+            </div>
+            <Link to="/contact">
+              <button className="btn btn-accent mt-4">
+                Contact <FontAwesomeIcon icon={faArrowRight} />
+              </button>
+            </Link>
           </div>
-          <Link to="/contact">
-            <button className="btn btn-accent mt-4">
-              Contact <FontAwesomeIcon icon={faArrowRight} />
-            </button>
-          </Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
