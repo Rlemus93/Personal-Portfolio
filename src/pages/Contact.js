@@ -29,18 +29,21 @@ const Contact = ({ theme, setTheme }) => {
                 type="text"
                 placeholder="Name"
                 name="name"
+                required
               />
               <input
                 className="bg-gray-200 p-2 mb-4 rounded  text-black"
                 type="email"
                 placeholder="Email"
                 name="email"
+                required
               />
               <textarea
                 className="bg-gray-200 p-2 mb-4 rounded text-black"
                 name="message"
                 rows="10"
                 placeholder="Message"
+                required
               ></textarea>
               <button className="btn btn-accent mt-4">
                 Let's Collaborate <FontAwesomeIcon icon={faArrowRight} />
