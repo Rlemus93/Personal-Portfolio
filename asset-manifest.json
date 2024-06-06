@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio/static/css/main.16a00236.css",
-    "main.js": "/Personal-Portfolio/static/js/main.979edfc9.js",
+    "main.css": "/Personal-Portfolio/static/css/main.5709af43.css",
+    "main.js": "/Personal-Portfolio/static/js/main.704c1f58.js",
     "static/js/453.1407b060.chunk.js": "/Personal-Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/project3.png": "/Personal-Portfolio/static/media/project3.b64f181cb5ab4a1a339a.png",
     "static/media/project1.png": "/Personal-Portfolio/static/media/project1.3d0630c9725efbc812e1.png",
@@ -17,8 +17,6 @@
     "static/media/postgre.png": "/Personal-Portfolio/static/media/postgre.a7fa39912c91e079e90b.png",
     "static/media/react.png": "/Personal-Portfolio/static/media/react.ac9979693620f0a96231.png",
     "static/media/git.png": "/Personal-Portfolio/static/media/git.bad2b1118eff814bb319.png",
-    "static/media/resume2.png": "/Personal-Portfolio/static/media/resume2.02247e24fe669dfc0397.png",
-    "static/media/resume.png": "/Personal-Portfolio/static/media/resume.b00e9ef74a2efc798c33.png",
     "static/media/logo.png": "/Personal-Portfolio/static/media/logo.d2e1ac051d0e3763e587.png",
     "static/media/github2.png": "/Personal-Portfolio/static/media/github2.5c08aa29dab2c3c5a7ca.png",
     "static/media/github.png": "/Personal-Portfolio/static/media/github.f11021803f68852df283.png",
@@ -30,12 +28,12 @@
     "static/media/rails.png": "/Personal-Portfolio/static/media/rails.ac98173f7ba849070715.png",
     "static/media/js.png": "/Personal-Portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/Personal-Portfolio/index.html",
-    "main.16a00236.css.map": "/Personal-Portfolio/static/css/main.16a00236.css.map",
-    "main.979edfc9.js.map": "/Personal-Portfolio/static/js/main.979edfc9.js.map",
+    "main.5709af43.css.map": "/Personal-Portfolio/static/css/main.5709af43.css.map",
+    "main.704c1f58.js.map": "/Personal-Portfolio/static/js/main.704c1f58.js.map",
     "453.1407b060.chunk.js.map": "/Personal-Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16a00236.css",
-    "static/js/main.979edfc9.js"
+    "static/css/main.5709af43.css",
+    "static/js/main.704c1f58.js"
   ]
 }
