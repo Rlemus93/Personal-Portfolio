@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className="flex flex-col h-screen">
       <Router>
-        <Navbar theme={theme} setTheme={setTheme} />
+        <Navbar />
         <AnimatedRoutes theme={theme} setTheme={setTheme} />
         <Footer />
       </Router>
